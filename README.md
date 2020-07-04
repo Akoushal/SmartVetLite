@@ -12,7 +12,7 @@
     ▪    iOS 13.0
 
 
-## API Hosting
+## API Hosting:
   ▪ The APIS are hosted at JSONbin.io. It is a Public Bin and can be accessed by anyone.
         1. https://api.jsonbin.io/b/5bd185fb51e8b664f2c1a56f/4 - For fetching Settings Configuration
         2. https://api.jsonbin.io/b/5bd186a3adf9f5652a6504c1 - For fetching Pet List
