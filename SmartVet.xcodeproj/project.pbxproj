@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42BA9A0224B0E2CC000E90DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A0124B0E2CC000E90DF /* AppDelegate.swift */; };
+		42BA9A0424B0E2CC000E90DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A0324B0E2CC000E90DF /* SceneDelegate.swift */; };
+		42BA9A0624B0E2CC000E90DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A0524B0E2CC000E90DF /* HomeViewController.swift */; };
+		42BA9A0924B0E2CC000E90DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42BA9A0724B0E2CC000E90DF /* Main.storyboard */; };
+		42BA9A0B24B0E2D1000E90DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42BA9A0A24B0E2D1000E90DF /* Assets.xcassets */; };
+		42BA9A0E24B0E2D1000E90DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42BA9A0C24B0E2D1000E90DF /* LaunchScreen.storyboard */; };
+		42BA9A1924B0E2D1000E90DF /* SmartVetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A1824B0E2D1000E90DF /* SmartVetTests.swift */; };
+		42BA9A2924B0E577000E90DF /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A2824B0E577000E90DF /* TopView.swift */; };
+		42BA9A2C24B0E68D000E90DF /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A2B24B0E68D000E90DF /* NetworkLayer.swift */; };
+		42BA9A2F24B0E6AD000E90DF /* PresenterLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A2E24B0E6AD000E90DF /* PresenterLayer.swift */; };
+		42BA9A3224B0E6D9000E90DF /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A3124B0E6D9000E90DF /* SettingsModel.swift */; };
+		42BA9A3524B0E708000E90DF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A3424B0E708000E90DF /* Configuration.swift */; };
+		42BA9A3824B0E73E000E90DF /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A3724B0E73E000E90DF /* ViewProtocols.swift */; };
+		42BA9A3A24B0E761000E90DF /* PetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A3924B0E761000E90DF /* PetsModel.swift */; };
+		42BA9A3C24B0E790000E90DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A3B24B0E790000E90DF /* Constants.swift */; };
+		42BA9A3E24B0E7F9000E90DF /* OfficeHoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A3D24B0E7F9000E90DF /* OfficeHoursView.swift */; };
+		42BA9A4024B0E839000E90DF /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A3F24B0E839000E90DF /* PetDetailViewController.swift */; };
+		42BA9A4324B0E8BA000E90DF /* PetInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA9A4224B0E8BA000E90DF /* PetInfoCell.swift */; };
+		42BA9A4524B0E8CE000E90DF /* PetInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BA9A4424B0E8CE000E90DF /* PetInfoCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42BA9A1524B0E2D1000E90DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42BA99F624B0E2CC000E90DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42BA99FD24B0E2CC000E90DF;
+			remoteInfo = SmartVet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42BA99FE24B0E2CC000E90DF /* SmartVet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BA9A0124B0E2CC000E90DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42BA9A0324B0E2CC000E90DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		42BA9A0524B0E2CC000E90DF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		42BA9A0824B0E2CC000E90DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42BA9A0A24B0E2D1000E90DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42BA9A0D24B0E2D1000E90DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42BA9A0F24B0E2D1000E90DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42BA9A1424B0E2D1000E90DF /* SmartVetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartVetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BA9A1824B0E2D1000E90DF /* SmartVetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartVetTests.swift; sourceTree = "<group>"; };
+		42BA9A1A24B0E2D1000E90DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42BA9A2824B0E577000E90DF /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		42BA9A2B24B0E68D000E90DF /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		42BA9A2E24B0E6AD000E90DF /* PresenterLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterLayer.swift; sourceTree = "<group>"; };
+		42BA9A3124B0E6D9000E90DF /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		42BA9A3424B0E708000E90DF /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		42BA9A3724B0E73E000E90DF /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		42BA9A3924B0E761000E90DF /* PetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsModel.swift; sourceTree = "<group>"; };
+		42BA9A3B24B0E790000E90DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		42BA9A3D24B0E7F9000E90DF /* OfficeHoursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeHoursView.swift; sourceTree = "<group>"; };
+		42BA9A3F24B0E839000E90DF /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
+		42BA9A4224B0E8BA000E90DF /* PetInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoCell.swift; sourceTree = "<group>"; };
+		42BA9A4424B0E8CE000E90DF /* PetInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PetInfoCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42BA99FB24B0E2CC000E90DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BA9A1124B0E2D1000E90DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42BA99F524B0E2CC000E90DF = {
+			isa = PBXGroup;
+			children = (
+				42BA9A0024B0E2CC000E90DF /* SmartVet */,
+				42BA9A1724B0E2D1000E90DF /* SmartVetTests */,
+				42BA99FF24B0E2CC000E90DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42BA99FF24B0E2CC000E90DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42BA99FE24B0E2CC000E90DF /* SmartVet.app */,
+				42BA9A1424B0E2D1000E90DF /* SmartVetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42BA9A0024B0E2CC000E90DF /* SmartVet */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A4624B0EE1F000E90DF /* AppDelegate */,
+				42BA9A3324B0E6E9000E90DF /* Configuration */,
+				42BA9A3024B0E6BF000E90DF /* Models */,
+				42BA9A2A24B0E680000E90DF /* Network */,
+				42BA9A2D24B0E699000E90DF /* Presenter */,
+				42BA9A3624B0E72B000E90DF /* Protocols */,
+				42BA9A2724B0E561000E90DF /* CustomViews */,
+				42BA9A2624B0E48F000E90DF /* Controllers */,
+				42BA9A0724B0E2CC000E90DF /* Main.storyboard */,
+				42BA9A0A24B0E2D1000E90DF /* Assets.xcassets */,
+				42BA9A0C24B0E2D1000E90DF /* LaunchScreen.storyboard */,
+				42BA9A0F24B0E2D1000E90DF /* Info.plist */,
+			);
+			path = SmartVet;
+			sourceTree = "<group>";
+		};
+		42BA9A1724B0E2D1000E90DF /* SmartVetTests */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A1824B0E2D1000E90DF /* SmartVetTests.swift */,
+				42BA9A1A24B0E2D1000E90DF /* Info.plist */,
+			);
+			path = SmartVetTests;
+			sourceTree = "<group>";
+		};
+		42BA9A2624B0E48F000E90DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A0524B0E2CC000E90DF /* HomeViewController.swift */,
+				42BA9A3F24B0E839000E90DF /* PetDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		42BA9A2724B0E561000E90DF /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A2824B0E577000E90DF /* TopView.swift */,
+				42BA9A3D24B0E7F9000E90DF /* OfficeHoursView.swift */,
+				42BA9A4124B0E8A9000E90DF /* CustomCell */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		42BA9A2A24B0E680000E90DF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A2B24B0E68D000E90DF /* NetworkLayer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		42BA9A2D24B0E699000E90DF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A2E24B0E6AD000E90DF /* PresenterLayer.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		42BA9A3024B0E6BF000E90DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A3124B0E6D9000E90DF /* SettingsModel.swift */,
+				42BA9A3924B0E761000E90DF /* PetsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42BA9A3324B0E6E9000E90DF /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A3424B0E708000E90DF /* Configuration.swift */,
+				42BA9A3B24B0E790000E90DF /* Constants.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		42BA9A3624B0E72B000E90DF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A3724B0E73E000E90DF /* ViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		42BA9A4124B0E8A9000E90DF /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A4224B0E8BA000E90DF /* PetInfoCell.swift */,
+				42BA9A4424B0E8CE000E90DF /* PetInfoCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		42BA9A4624B0EE1F000E90DF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				42BA9A0124B0E2CC000E90DF /* AppDelegate.swift */,
+				42BA9A0324B0E2CC000E90DF /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42BA99FD24B0E2CC000E90DF /* SmartVet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42BA9A1D24B0E2D1000E90DF /* Build configuration list for PBXNativeTarget "SmartVet" */;
+			buildPhases = (
+				42BA99FA24B0E2CC000E90DF /* Sources */,
+				42BA99FB24B0E2CC000E90DF /* Frameworks */,
+				42BA99FC24B0E2CC000E90DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartVet;
+			productName = SmartVet;
+			productReference = 42BA99FE24B0E2CC000E90DF /* SmartVet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42BA9A1324B0E2D1000E90DF /* SmartVetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42BA9A2024B0E2D1000E90DF /* Build configuration list for PBXNativeTarget "SmartVetTests" */;
+			buildPhases = (
+				42BA9A1024B0E2D1000E90DF /* Sources */,
+				42BA9A1124B0E2D1000E90DF /* Frameworks */,
+				42BA9A1224B0E2D1000E90DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42BA9A1624B0E2D1000E90DF /* PBXTargetDependency */,
+			);
+			name = SmartVetTests;
+			productName = SmartVetTests;
+			productReference = 42BA9A1424B0E2D1000E90DF /* SmartVetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42BA99F624B0E2CC000E90DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Koushal, KumarAjitesh";
+				TargetAttributes = {
+					42BA99FD24B0E2CC000E90DF = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					42BA9A1324B0E2D1000E90DF = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 42BA99FD24B0E2CC000E90DF;
+					};
+				};
+			};
+			buildConfigurationList = 42BA99F924B0E2CC000E90DF /* Build configuration list for PBXProject "SmartVet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42BA99F524B0E2CC000E90DF;
+			productRefGroup = 42BA99FF24B0E2CC000E90DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42BA99FD24B0E2CC000E90DF /* SmartVet */,
+				42BA9A1324B0E2D1000E90DF /* SmartVetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42BA99FC24B0E2CC000E90DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BA9A0E24B0E2D1000E90DF /* LaunchScreen.storyboard in Resources */,
+				42BA9A4524B0E8CE000E90DF /* PetInfoCell.xib in Resources */,
+				42BA9A0B24B0E2D1000E90DF /* Assets.xcassets in Resources */,
+				42BA9A0924B0E2CC000E90DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BA9A1224B0E2D1000E90DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42BA99FA24B0E2CC000E90DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BA9A3224B0E6D9000E90DF /* SettingsModel.swift in Sources */,
+				42BA9A3C24B0E790000E90DF /* Constants.swift in Sources */,
+				42BA9A0624B0E2CC000E90DF /* HomeViewController.swift in Sources */,
+				42BA9A2924B0E577000E90DF /* TopView.swift in Sources */,
+				42BA9A3E24B0E7F9000E90DF /* OfficeHoursView.swift in Sources */,
+				42BA9A4324B0E8BA000E90DF /* PetInfoCell.swift in Sources */,
+				42BA9A2F24B0E6AD000E90DF /* PresenterLayer.swift in Sources */,
+				42BA9A0224B0E2CC000E90DF /* AppDelegate.swift in Sources */,
+				42BA9A2C24B0E68D000E90DF /* NetworkLayer.swift in Sources */,
+				42BA9A3524B0E708000E90DF /* Configuration.swift in Sources */,
+				42BA9A3A24B0E761000E90DF /* PetsModel.swift in Sources */,
+				42BA9A3824B0E73E000E90DF /* ViewProtocols.swift in Sources */,
+				42BA9A4024B0E839000E90DF /* PetDetailViewController.swift in Sources */,
+				42BA9A0424B0E2CC000E90DF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BA9A1024B0E2D1000E90DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BA9A1924B0E2D1000E90DF /* SmartVetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42BA9A1624B0E2D1000E90DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42BA99FD24B0E2CC000E90DF /* SmartVet */;
+			targetProxy = 42BA9A1524B0E2D1000E90DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42BA9A0724B0E2CC000E90DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42BA9A0824B0E2CC000E90DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42BA9A0C24B0E2D1000E90DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42BA9A0D24B0E2D1000E90DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42BA9A1B24B0E2D1000E90DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42BA9A1C24B0E2D1000E90DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42BA9A1E24B0E2D1000E90DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartVet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SmartVet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42BA9A1F24B0E2D1000E90DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartVet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SmartVet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42BA9A2124B0E2D1000E90DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartVetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SmartVetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartVet.app/SmartVet";
+			};
+			name = Debug;
+		};
+		42BA9A2224B0E2D1000E90DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartVetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SmartVetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartVet.app/SmartVet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42BA99F924B0E2CC000E90DF /* Build configuration list for PBXProject "SmartVet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BA9A1B24B0E2D1000E90DF /* Debug */,
+				42BA9A1C24B0E2D1000E90DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42BA9A1D24B0E2D1000E90DF /* Build configuration list for PBXNativeTarget "SmartVet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BA9A1E24B0E2D1000E90DF /* Debug */,
+				42BA9A1F24B0E2D1000E90DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42BA9A2024B0E2D1000E90DF /* Build configuration list for PBXNativeTarget "SmartVetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BA9A2124B0E2D1000E90DF /* Debug */,
+				42BA9A2224B0E2D1000E90DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42BA99F624B0E2CC000E90DF /* Project object */;
+}
