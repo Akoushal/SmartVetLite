@@ -9,7 +9,7 @@
 import Foundation
 
 //Struct for Pets
-struct Pets: Decodable {
+struct Pets: Codable {
     let image_url: String?
     let title: String?
     let content_url: String?

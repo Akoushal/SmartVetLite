@@ -9,7 +9,7 @@
 import Foundation
 
 //Struct for Settings
-struct SettingsModel: Decodable {
+struct SettingsModel: Codable {
     let isChatEnabled: Bool?
     let isCallEnabled: Bool?
     let workHours: String?

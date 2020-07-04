@@ -11,24 +11,49 @@ import XCTest
 
 class SmartVetTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    // Used in test_serializeSettingsModel()
+    let settingsMockedJSON: [String: Any] = ["isCallEnabled": true, "isChatEnabled": true, "workHours": "M-F 5:00 - 10:00"]
+    
+    // Used in test_serializePetsModel()
+    let petsMockedJSON = ["date_added": "2018-06-02T03:27:38.027Z", "content_url": "https://en.wikipedia.org/wiki/Cat", "title": "Cat", "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cat_poster_1.jpg/1200px-Cat_poster_1.jpg"]
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    /*
+     // Test: For checking HomeViewController conforms to CollectionViewDatasource
+     */
+    func test_controllerConformsToCollectionViewDataSourceProtocol() {
+        let controller = HomeViewController()
+        XCTAssertTrue(controller.conforms(to: UICollectionViewDataSource.self))
+        XCTAssertTrue(controller.responds(to: #selector(controller.collectionView(_:numberOfItemsInSection:))))
+        XCTAssertTrue(controller.responds(to: #selector(controller.collectionView(_:cellForItemAt:))))
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    /*
+     // Test: For serializing mocked JSON object into SettingsModel
+     */
+    func test_serializeSettingsModel() {
+        guard let data = try? JSONSerialization.data(withJSONObject: settingsMockedJSON, options: .prettyPrinted), let settingsInfo = try? JSONDecoder().decode(SettingsModel.self, from: data) else {
+            XCTFail()
+            return
         }
+        
+        XCTAssert(settingsInfo.isCallEnabled == true)
+        XCTAssert(settingsInfo.isChatEnabled == true)
+        XCTAssert(settingsInfo.workHours == "M-F 5:00 - 10:00")
     }
-
+    
+    /*
+     // Test: For serializing mocked JSON object into PetsModel
+     */
+    func test_serializePetsModel()
+    {
+        guard let data = try? JSONSerialization.data(withJSONObject: petsMockedJSON, options: .prettyPrinted), let petsModel = try? JSONDecoder().decode(Pets.self, from: data) else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssert(petsModel.title == "Cat")
+        XCTAssert(petsModel.date_added == "2018-06-02T03:27:38.027Z")
+        XCTAssert(petsModel.content_url == "https://en.wikipedia.org/wiki/Cat")
+        XCTAssert(petsModel.image_url == "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cat_poster_1.jpg/1200px-Cat_poster_1.jpg")
+    }
 }
