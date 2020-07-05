@@ -6,6 +6,7 @@
     ▪    Office hours is displayed below the call and chat buttons
     ▪    Each pet information is presented in a cell with Image and title
     ▪    Tapping on a pet info cell would open a new screen that loads the pet information on a webview
+    ▪    Unit Test Support
 
 
 ## Requirements:
@@ -22,3 +23,4 @@ https://api.jsonbin.io/b/5bd185fb51e8b664f2c1a56f/4 - Both Call & Chat Buttons V
 https://api.jsonbin.io/b/5bd185fb51e8b664f2c1a56f/5 - Only Chat Button Visible
 https://api.jsonbin.io/b/5bd185fb51e8b664f2c1a56f/6 - Only Call Button Visible
 https://api.jsonbin.io/b/5bd185fb51e8b664f2c1a56f/7 - Both are hidden
+
